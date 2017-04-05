@@ -1,7 +1,5 @@
 package com.tw.axonbootcamp.dto;
 
-import com.fasterxml.jackson.annotation.JsonProperty;
-
 public class AccountRequest {
 
     private String firstname;
@@ -10,7 +8,8 @@ public class AccountRequest {
     public AccountRequest() {
     }
 
-    public AccountRequest(@JsonProperty("firstname") String firstname, @JsonProperty("phonenumber") String phonenumber) {
+
+    public AccountRequest(String firstname, String phonenumber) {
         this.firstname = firstname;
         this.phonenumber = phonenumber;
     }
